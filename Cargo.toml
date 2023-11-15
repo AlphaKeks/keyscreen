@@ -1,0 +1,23 @@
+[package]
+name = "keyscreen"
+version = "0.0.0"
+authors = ["AlphaKeks <alphakeks@dawn.sh>"]
+edition = "2021"
+
+[features]
+debug = []
+
+[dependencies]
+color-eyre = "0.6.2"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.17"
+rdev = "0.5.3"
+
+[dependencies.eframe]
+version = "0.23.0"
+default-features = false
+features = ["default_fonts", "x11", "wgpu"]
+
+[dependencies.catppuccin-egui]
+git = "https://github.com/catppuccin/egui"
+rev = "f2bcf74a122d82e880a7e61c8833e043a825409e"
