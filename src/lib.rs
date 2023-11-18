@@ -1,7 +1,7 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 pub enum Event {
-	Key(&'static str),
 	Modifier { key: Modifier, pressed: bool },
+	Key(rdev::Key),
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
